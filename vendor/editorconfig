@@ -1,0 +1,103 @@
+# http://editorconfig.org
+
+
+# A special property that should be specified at the top of the file outside of
+
+# any sections. Set to true to stop .editor config file search on current file
+
+root = true
+
+[*]
+# Indentation style
+
+# Possible values - tab, space
+
+indent_style = space
+
+# Indentation size in single-spaced characters
+
+# Possible values - an integer, tab
+
+indent_size = 2
+
+# Line ending file format
+
+# Possible values - lf, crlf, cr
+
+end_of_line = lf
+
+# File character encoding
+
+# Possible values - latin1, utf-8, utf-16be, utf-16le
+
+charset = utf-8
+
+# Denotes whether to trim whitespace at the end of lines
+
+# Possible values - true, false
+
+trim_trailing_whitespace = true
+
+# Denotes whether file should end with a newline
+
+# Possible values - true, false
+
+insert_final_newline = true
+          
+Применяйте кодировку UTF-8
+Установите кодировку UTF-8 в HTML шаблонах и документах:
+<meta charset="utf-8"> Сохраняйте файлы шаблонов и документов в той же кодировке (чаще всего она устанавливается автоматически).
+
+Не нужно специально прописывать кодировку для таблиц стилей: им по умолчанию присваивается UTF-8. Это универсальная кодировка, её поддерживают все современные браузеры и приложения.
+
+Используйте только строчные символы
+Весь код (как в HTML, так и в CSS) должен быть написан строчными символами.
+
+Это касается имён HTML-элементов, атрибутов и их значений (за исключением text/CDATA), CSS-селекторов, свойств и значений свойств (за исключением строк, например, в значениях атрибутов alt и title).
+
+Заглавными буквами писали, чтобы элементы разметки выделялись в коде. Когда появились редакторы кода с подсветкой синтаксиса, надобность в заглавных буквах отпала. Их использование воспринимается как "old school".
+
+
+<!-- Не рекомендуется -->
+
+<A HREF="/">Home</A>
+
+<!-- Рекомендуется -->
+
+<img src="yandex.png" alt="Yandex">
+          
+
+/* Не рекомендуется */
+color: #E5E5E5;
+
+/* Рекомендуется */
+color: #e5e5e5;
+          
+Протокол
+Если для получения внедрённых в документ элементов (медиафайлов, таблиц стилей и скриптов) доступен протокол HTTPS — используйте именно его. Когда страница, полученная по безопасному протоколу HTTPS, подгружает элементы по незащищенному протоколу HTTP, браузер сообщает пользователю о нарушении безопасности. Осторожный пользователь такую страницу покинет.
+
+
+<!-- Не рекомендуется: протокол не указан -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!--Не рекомендуется: используется протокол HTTP при доступном HTTPS -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Рекомендуется -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+          
+
+/* Не рекомендуется: протокол не указан */
+
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+
+/* Не рекомендуется: используется протокол HTTP при доступном HTTPS */
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Рекомендуется */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');

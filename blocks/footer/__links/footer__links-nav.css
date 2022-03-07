@@ -1,0 +1,13 @@
+.footer__links-nav {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       display: inline-block;
+       padding-bottom: 24px;
+   }
+
+   @media screen and (max-width: 320px) {
+       .footer__links-nav {
+        margin-bottom: 32px;
+       }
+   }

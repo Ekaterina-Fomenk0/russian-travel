@@ -1,0 +1,14 @@
+.header__links-list {
+    display:flex;
+    justify-content: space-between;
+    min-width: 78px;
+    max-height: 28px;
+}
+
+@media screen and (max-width: 320px) {
+    .header__links-list {
+        max-width: 62px;
+        max-height: 20px;
+        padding-top: 14px ;
+    }
+}
