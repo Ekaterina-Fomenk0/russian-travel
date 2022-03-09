@@ -3,8 +3,10 @@
     grid-template-rows: auto;
     max-width: 984px;
     margin: 0 auto;
+    padding: 0;
     gap: 80px;
-    margin-bottom: 92px
+    margin-bottom: 92px;
+    
    }
 
    @media screen and (max-width: 1024px) {
