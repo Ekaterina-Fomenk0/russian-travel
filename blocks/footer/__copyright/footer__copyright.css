@@ -1,7 +1,6 @@
 .footer__copyright {
-    margin: 0;
-    padding-bottom: 24px;
-    min-width: 200px;
-    max-height: 16px;
+  margin: 0;
+  min-width: 200px;
+  font-size: 14px;
+  line-height: 16px;
 }
-

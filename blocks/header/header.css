@@ -2,32 +2,21 @@
   margin: 0;
   padding: 0;
   max-width: 1184px;
-  max-height: 52px;
   display: flex;
-  padding-top: 28px;
-  margin-bottom: 56px;
+  padding: 28px 24px 56px;
   justify-content: space-between;
   align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .header {
       max-width: 90%;
-      margin: 0 auto 48px;
+      padding: 28 auto 48px;
     }
-} 
-
-@media screen and (max-width: 768px) {
-  .header {
-   
-    
-  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .header {
-    max-height: 42px;
-    padding-top: 16px;
-    
+    padding: 16px 16px 48px;
   }
 }
